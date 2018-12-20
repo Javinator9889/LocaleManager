@@ -24,6 +24,40 @@ android {
 
 }
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'LocaleManager'
+
+    publishedGroupId = 'com.github.javinator9889'
+    libraryName = 'LocaleManager'
+    artifact = 'localemanager'
+
+    libraryDescription = 'An easy access interface for managing locales ' +
+            '(languages) on your Android application'
+
+    siteUrl = 'https://github.com/Javinator9889/LocaleManager'
+    gitUrl = 'https://github.com/Javinator9889/LocaleManager.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'Javinator9889'
+    developerName = 'Javinator9889'
+    developerEmail = 'javialonso007@hotmail.es'
+
+    licenseName = 'GNU General Public License v3.0'
+    licenseUrl = 'https://github.com/Javinator9889/LocaleManager/blob/master/LICENSE'
+    allLicenses = ["GPL-3"]
+}
+
+group 'com.github.javinator9889'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -34,3 +68,13 @@ dependencies {
 
     implementation 'com.android.support:support-annotations:28.0.0'
 }
+
+/*jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                'Implementation-Version': project.version)
+    }
+}*/
+
+apply from: 'https://raw.githubusercontent.com/brightec/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/brightec/JCenter/master/bintrayv1.gradle'
