@@ -29,9 +29,9 @@ import javinator9889.localemanager.localemanager.LocaleManager;
 
 /**
  * Your application must inherits from this {@link Application} implementation
- * or either override {@link #attachBaseContext(Context)} and {@link
- * #onConfigurationChanged(Configuration)}, declaring a static field of a {@link
- * LocaleManager} instance.
+ * or either override {@link Application#attachBaseContext(Context)} and {@link
+ * Application#onConfigurationChanged(Configuration)}, declaring a static field
+ * of a {@link LocaleManager} instance.
  * <p>
  * This base application allows your app to use a custom language (locale)
  * without any troubles or even revert back to system default one. By using the

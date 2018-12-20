@@ -26,8 +26,8 @@ import javinator9889.localemanager.application.BaseApplication;
 /**
  * Base Fragment from which your activities must inherit from.
  * <p>
- * It has the same behaviour as a simple non-modified Fragment, but it
- * changes its content language when configuration has changed. Notice that you
+ * It has the same behaviour as a simple non-modified Fragment, but it changes
+ * its content language when configuration has changed. Notice that you
  * <b>must clean and restart</b> your activities when the user has changed the
  * language. If not, there will be no changes on UI.
  */
