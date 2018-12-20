@@ -34,6 +34,22 @@ import javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Langua
 import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static javinator9889.localemanager.utils.Constants.KEY;
 
+/**
+ * {@code LocaleManager} provides an easy access functionality for changing
+ * application language to user's preferred one.
+ * <p>
+ * By default, it uses the "default preferences" for ensuring persistence across
+ * application sessions and instances, but it also allows the developer to use
+ * custom ones, for example for simplifying and merging all shared preferences
+ * files.
+ * <p>
+ * It uses proper Android context and configurations for managing and changing
+ * locales. As this is not recommended and is not officially maintained and
+ * documented by Android, it is possible to alter the locale for a custom
+ * application without so much effort with this lib. But it is important that
+ * when building your application, advising the user that he should not change
+ * the application language but the Android device language instead.
+ */
 public class LocaleManager {
     /**
      * For data persistence across instances, the user language is stored inside
