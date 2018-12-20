@@ -18,7 +18,11 @@
  */
 package javinator9889.localemanager.utils;
 
+import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
@@ -26,6 +30,7 @@ import android.support.annotation.NonNull;
 
 import java.util.Locale;
 
+import static android.content.pm.PackageManager.GET_META_DATA;
 import static android.os.Build.VERSION_CODES.N;
 
 public class Utils {
@@ -70,5 +75,28 @@ public class Utils {
         return isAtLeastAndroidVersion(N) ?
                 config.getLocales().get(0) :
                 config.locale;
+    }
+
+    /**
+     * Updates the string resource identifier (in the package's resources) of
+     * the activity's label.
+     *
+     * @param activity the source activity from which the title will be changed
+     *                 - it cannot be {@code null} and it must exist.
+     *
+     * @see PackageManager#getActivityInfo(ComponentName, int)
+     */
+    public static void resetActivityTitle(@NonNull Activity activity) {
+        try {
+            ActivityInfo info = activity.getPackageManager()
+                    .getActivityInfo(activity.getComponentName(), GET_META_DATA);
+            if (info.labelRes != 0) {
+                activity.setTitle(info.labelRes);
+            }
+        } catch (PackageManager.NameNotFoundException ignored) {
+            // We do not handle this error as it should never happen - we are
+            // getting the componentName from the proper activity, so the
+            // package with that given name must exists
+        }
     }
 }

@@ -19,6 +19,66 @@
 package javinator9889.localemanager.activity;
 
 import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
+import javinator9889.localemanager.application.BaseApplication;
+import javinator9889.localemanager.utils.Utils;
+
+/**
+ * Base Activity from which your activities must inherit from.
+ * <p>
+ * It has the same behaviour as a simple non-modified Activity, but it changes
+ * its content language when configuration has changed. Notice that you <b>must
+ * clean and restart</b> your activities when the user has changed the language.
+ * If not, there will be no changes on UI.
+ */
 public abstract class BaseActivity extends Activity {
+    /**
+     * Set the base context for this ContextWrapper.  All calls will then be
+     * delegated to the base context.  Throws IllegalStateException if a base
+     * context has already been set.
+     *
+     * @param base The new base context for this wrapper.
+     */
+    @Override
+    protected void attachBaseContext(@NonNull Context base) {
+        super.attachBaseContext(BaseApplication.localeManager.setLocale(base));
+    }
+
+    /**
+     * Called when the activity is starting.  This is where most initialization
+     * should go: calling {@link #setContentView(int)} to inflate the activity's
+     * UI, using {@link #findViewById} to programmatically interact with widgets
+     * in the UI, calling {@link #managedQuery(android.net.Uri, String[],
+     * String, String[], String)} to retrieve cursors for data being displayed,
+     * etc.
+     *
+     * <p>You can call {@link #finish} from within this function, in
+     * which case onDestroy() will be immediately called after {@link #onCreate}
+     * without any of the rest of the activity lifecycle ({@link #onStart},
+     * {@link #onResume}, {@link #onPause}, etc) executing.
+     *
+     * <p><em>Derived classes must call through to the super class's
+     * implementation of this method.  If they do not, an exception will be
+     * thrown.</em></p>
+     *
+     * @param savedInstanceState If the activity is being re-initialized after
+     *                           previously being shut down then this Bundle
+     *                           contains the data it most recently supplied in
+     *                           {@link #onSaveInstanceState}.  <b><i>Note:
+     *                           Otherwise it is null.</i></b>
+     *
+     * @see #onStart
+     * @see #onSaveInstanceState
+     * @see #onRestoreInstanceState
+     * @see #onPostCreate
+     */
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Utils.resetActivityTitle(this);
+    }
 }
