@@ -24,7 +24,6 @@ import java.lang.annotation.Retention;
 
 import static java.lang.annotation.RetentionPolicy.SOURCE;
 import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.*;
-//import static javinator9889.localemanager.utils.Constants.Languages.*;
 
 /**
  * Instead of using an {@code enum}, a {@link StringDef} is used for
