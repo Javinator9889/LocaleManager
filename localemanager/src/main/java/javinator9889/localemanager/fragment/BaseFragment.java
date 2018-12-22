@@ -19,7 +19,7 @@
 package javinator9889.localemanager.fragment;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import javinator9889.localemanager.application.BaseApplication;
 

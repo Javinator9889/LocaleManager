@@ -18,7 +18,7 @@
  */
 package javinator9889.localemanager.utils.languagesupport;
 
-import android.support.annotation.StringDef;
+import androidx.annotation.StringDef;
 
 import java.lang.annotation.Retention;
 
