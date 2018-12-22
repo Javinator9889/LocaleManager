@@ -48,38 +48,6 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
         super.attachBaseContext(BaseApplication.localeManager.setLocale(base));
     }
 
-    /**
-     * Called when the activity is starting.  This is where most initialization
-     * should go: calling {@link android.support.v4.app.FragmentActivity#setContentView(int)}
-     * to inflate the activity's UI, using {@link android.support.v4.app.FragmentActivity#findViewById}
-     * to programmatically interact with widgets in the UI, calling {@link
-     * android.support.v4.app.FragmentActivity#managedQuery(android.net.Uri,
-     * String[], String, String[], String)} to retrieve cursors for data being
-     * displayed, etc.
-     *
-     * <p>You can call {@link android.support.v4.app.FragmentActivity#finish}
-     * from within this
-     * function, in which case onDestroy() will be immediately called after
-     * {@link android.support.v4.app.FragmentActivity#onCreate} without any of
-     * the rest of the activity lifecycle ({@link android.support.v4.app.FragmentActivity#onStart},
-     * {@link android.support.v4.app.FragmentActivity#onResume}, {@link
-     * android.support.v4.app.FragmentActivity#onPause}, etc) executing.
-     *
-     * <p><em>Derived classes must call through to the super class's
-     * implementation of this method.  If they do not, an exception will be
-     * thrown.</em></p>
-     *
-     * @param savedInstanceState If the activity is being re-initialized after
-     *                           previously being shut down then this Bundle
-     *                           contains the data it most recently supplied in
-     *                           {@link android.support.v4.app.FragmentActivity#onSaveInstanceState}.
-     *                           <b><i>Note: Otherwise it is null.</i></b>
-     *
-     * @see android.support.v4.app.FragmentActivity#onStart
-     * @see android.support.v4.app.FragmentActivity#onSaveInstanceState
-     * @see android.support.v4.app.FragmentActivity#onRestoreInstanceState
-     * @see android.support.v4.app.FragmentActivity#onPostCreate
-     */
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

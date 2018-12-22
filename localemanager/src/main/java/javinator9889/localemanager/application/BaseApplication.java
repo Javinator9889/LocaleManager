@@ -28,9 +28,9 @@ import android.support.annotation.Nullable;
 import javinator9889.localemanager.localemanager.LocaleManager;
 
 /**
- * Your application must inherits from this {@link Application} implementation
- * or either override {@link android.app.Application#attachBaseContext(Context)}
- * and {@link android.app.Application#onConfigurationChanged(Configuration)},
+ * Your application must inherits from this Application implementation
+ * or either override {@code attachBaseContext(Context)}
+ * and {@code onConfigurationChanged(Configuration)},
  * declaring a static field of a {@link LocaleManager} instance.
  * <p>
  * This base application allows your app to use a custom language (locale)
