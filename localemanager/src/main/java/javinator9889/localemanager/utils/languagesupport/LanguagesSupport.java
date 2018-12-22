@@ -26,7 +26,7 @@ import static java.lang.annotation.RetentionPolicy.SOURCE;
 import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.*;
 
 /**
- * Instead of using an {@code enum}, a {@link StringDef} is used for
+ * Instead of using an {@code enum}, a {@code StringDef} is used for
  * providing an easy access to the user for defining the language he wants to
  * use for defining the Locale
  */
