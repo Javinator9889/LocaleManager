@@ -21,11 +21,14 @@ package javinator9889.localemanager.activity;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import javinator9889.localemanager.application.BaseApplication;
 import javinator9889.localemanager.utils.Utils;
+
+//import androidx.annotation.NonNull;
+//import androidx.annotation.Nullable;
 
 /**
  * Base Activity from which your activities must inherit from.

@@ -20,12 +20,16 @@ package javinator9889.localemanager.activity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import javinator9889.localemanager.application.BaseApplication;
 import javinator9889.localemanager.utils.Utils;
+
+//import androidx.annotation.NonNull;
+//import androidx.annotation.Nullable;
+//import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Base AppCompatActivity from which your activities must inherit from.

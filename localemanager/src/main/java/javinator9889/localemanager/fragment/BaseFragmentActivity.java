@@ -20,12 +20,16 @@ package javinator9889.localemanager.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentActivity;
 import javinator9889.localemanager.application.BaseApplication;
 import javinator9889.localemanager.utils.Utils;
+
+//import androidx.annotation.NonNull;
+//import androidx.annotation.Nullable;
+//import androidx.fragment.app.FragmentActivity;
 
 /**
  * Base FragmentActivity from which your activities must inherit from.

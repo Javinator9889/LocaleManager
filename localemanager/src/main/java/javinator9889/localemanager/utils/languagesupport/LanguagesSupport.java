@@ -18,9 +18,9 @@
  */
 package javinator9889.localemanager.utils.languagesupport;
 
-import java.lang.annotation.Retention;
+import android.support.annotation.StringDef;
 
-import androidx.annotation.StringDef;
+import java.lang.annotation.Retention;
 
 import static java.lang.annotation.RetentionPolicy.SOURCE;
 import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.ARABIC;
@@ -61,6 +61,8 @@ import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport
 import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.TURKISH;
 import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.UKRAINIAN;
 import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.VIETNAMESE;
+
+//import androidx.annotation.StringDef;
 
 /**
  * Instead of using an {@code enum}, a {@code StringDef} is used for

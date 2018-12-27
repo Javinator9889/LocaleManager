@@ -24,15 +24,17 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 
 import java.util.Locale;
 
-import androidx.annotation.NonNull;
 import javinator9889.localemanager.utils.Utils;
 import javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language;
 
 import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static javinator9889.localemanager.utils.Constants.KEY;
+
+//import androidx.annotation.NonNull;
 
 /**
  * {@code LocaleManager} provides an easy access functionality for changing
