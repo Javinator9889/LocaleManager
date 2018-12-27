@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "javinator9889.localemanager"
+        applicationId "javinator9889.localemanager.example"
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
@@ -24,4 +24,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.github.javinator9889:localemanager:1.1X'
 }

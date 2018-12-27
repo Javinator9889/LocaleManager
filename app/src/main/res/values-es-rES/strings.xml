@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_title">Pulsa en los botones de abajo para cambiar el idioma</string>
+    <string name="switch_english">Cambiar a inglés</string>
+    <string name="switch_spanish">Cambiar a castellano</string>
+    <string name="switch_russian">Cambiar a ruso</string>
+    <string name="switch_default">Cambiar al idioma del sistema</string>
+    <string name="current_language">Idioma actual: %1s</string>
+</resources>
