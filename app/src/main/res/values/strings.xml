@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">LocaleManager</string>
+    <string name="activity_title">Click the buttons below for changing
+        language</string>
+    <string name="switch_english">Switch to English</string>
+    <string name="switch_spanish">Switch to Spanish</string>
+    <string name="switch_russian">Switch to Russian</string>
+    <string name="switch_default">Switch to system language</string>
+    <string name="current_language">Current language: %1s</string>
+</resources>

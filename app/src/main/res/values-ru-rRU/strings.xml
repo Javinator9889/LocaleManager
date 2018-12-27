@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_title">Нажмите кнопки ниже для изменения языка</string>
+    <string name="switch_english">Переключиться на английский</string>
+    <string name="switch_spanish">Переключить на испанский</string>
+    <string name="switch_russian">Переключиться на русский</string>
+    <string name="switch_default">Переключиться на язык системы</string>
+    <string name="current_language">Текущий язык: %1s</string>
+</resources>
