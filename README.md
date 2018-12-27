@@ -118,8 +118,10 @@ public class YourApplication extends BaseApplication {
         return null;
     }    
 }
+```
 
-/* -------- */
+
+```java
 
 import javinator9889.localemanager.activity.BaseAppCompatActivity;
 import javinator9889.localemanager.utils.languagesupport.LanguagesSupport;
