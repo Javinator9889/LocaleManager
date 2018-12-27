@@ -6,7 +6,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 21
-        versionName "1.0X"
+        versionName "1.1X"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -40,7 +40,7 @@ ext {
     siteUrl = 'https://github.com/Javinator9889/LocaleManager'
     gitUrl = 'https://github.com/Javinator9889/LocaleManager.git'
 
-    libraryVersion = '1.0X'
+    libraryVersion = '1.1X'
 
     developerId = 'Javinator9889'
     developerName = 'Javinator9889'
