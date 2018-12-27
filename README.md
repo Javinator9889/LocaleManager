@@ -173,11 +173,11 @@ is to understand *how Android locales works* and then just repeat the same proce
 
 If you want to contribute, I probably need your help:
 
-+ Share and like **this repository**, so much more people can enjoy it and its benefits.
++ Share and like **this repository**, so much more people can enjoy it and its benefits 🗣❤
 + Comment *any bugs* or problems you have: there will be **an entire community** wanting to help 
-you.
+you 👥
 + Commit *your own* implementations or enhancements you consider necessary - there are only a 
-*few languages* supported, so you can commit the ones that are missing.
+*few languages* supported, so you can commit the ones that are missing 🧠
 
 Lets make the *Android community* stronger and help the others deploying their own applications 💪
 
