@@ -2,8 +2,8 @@
 Android Locale Manager compatible with multiple versions - change your Android App language easily
 
 [![Build Status](https://travis-ci.com/Javinator9889/LocaleManager.svg?branch=master)](https://travis-ci.com/Javinator9889/LocaleManager)
-[![Android X - latest version](https://img.shields.io/badge/Android%20X%20-1.1X%20APK-green.svg)](https://bintray.com/javinator9889/maven/LocaleManager/1.1X)
-[![Android - latest version](https://img.shields.io/badge/AppCompat%20-1.1%20APK-green.svg)](https://bintray.com/javinator9889/maven/LocaleManager/1.1)
+[![Android X - latest version](https://img.shields.io/badge/Android%20X%20-v1.1X-green.svg)](https://bintray.com/javinator9889/maven/LocaleManager/1.1X)
+[![Android - latest version](https://img.shields.io/badge/AppCompat%20-v1.1-green.svg)](https://bintray.com/javinator9889/maven/LocaleManager/1.1)
 
 ## Index
 
