@@ -159,10 +159,11 @@ public class YourActivity extends BaseAppCompatActivity implements Button.OnClic
 ```
 
 As you can see, with that simple steps you can easily change dynamically your application language.
-![English](/captures/english.png)
-![Spanish](/captures/spanish.png)
-![Russian](/captures/russian.png)
-![System](/captures/system.png)
+
+![English](/screen-captures/english.png)
+![Spanish](/screen-captures/spanish.png)
+![Russian](/screen-captures/russian.png)
+![System](/screen-captures/system.png)
 
 ### Contributing
 As you can see, developing this application is **quite simple**: the only necessary requirement 
