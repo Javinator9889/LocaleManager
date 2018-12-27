@@ -24,10 +24,10 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
-import androidx.annotation.NonNull;
 
 import java.util.Locale;
 
+import androidx.annotation.NonNull;
 import javinator9889.localemanager.utils.Utils;
 import javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language;
 

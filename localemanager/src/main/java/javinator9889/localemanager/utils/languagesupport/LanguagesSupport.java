@@ -18,12 +18,49 @@
  */
 package javinator9889.localemanager.utils.languagesupport;
 
-import androidx.annotation.StringDef;
-
 import java.lang.annotation.Retention;
 
+import androidx.annotation.StringDef;
+
 import static java.lang.annotation.RetentionPolicy.SOURCE;
-import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.*;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.ARABIC;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.BULGARIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.CATALAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.CHINESE;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.CROATIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.CZECH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.DANISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.DUTCH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.ENGLISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.FINNISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.FRENCH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.GERMAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.GREEK;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.HEBREW;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.HINDI;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.HUNGARIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.INDONESIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.ITALIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.JAPANESE;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.KOREAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.LATVIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.LITHUANIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.NORWEGIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.POLISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.PORTUGUESE;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.ROMANIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.RUSSIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.SERBIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.SLOVAK;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.SLOVENIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.SPANISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.SWEDISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.SYSTEM;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.TAGALOG;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.THAI;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.TURKISH;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.UKRAINIAN;
+import static javinator9889.localemanager.utils.languagesupport.LanguagesSupport.Language.VIETNAMESE;
 
 /**
  * Instead of using an {@code enum}, a {@code StringDef} is used for
@@ -76,7 +113,8 @@ public abstract class LanguagesSupport {
             TURKISH,
             UKRAINIAN,
             VIETNAMESE,
-            SYSTEM
+            SYSTEM,
+            ENGLISH
     })
 
     /*
@@ -84,6 +122,7 @@ public abstract class LanguagesSupport {
      */
     public @interface Language {
         String SYSTEM = "sys";
+        String ENGLISH = "en";
         String GERMAN = "de";
         String CHINESE = "zh";
         String CZECH = "cs";

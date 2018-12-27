@@ -22,9 +22,9 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import javinator9889.localemanager.localemanager.LocaleManager;
 
 /**

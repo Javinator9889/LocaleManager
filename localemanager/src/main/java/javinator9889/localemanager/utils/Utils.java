@@ -26,9 +26,10 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
-import androidx.annotation.NonNull;
 
 import java.util.Locale;
+
+import androidx.annotation.NonNull;
 
 import static android.content.pm.PackageManager.GET_META_DATA;
 import static android.os.Build.VERSION_CODES.N;

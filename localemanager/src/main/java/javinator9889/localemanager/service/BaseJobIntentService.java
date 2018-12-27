@@ -19,8 +19,8 @@
 package javinator9889.localemanager.service;
 
 import android.content.Context;
-import androidx.core.app.JobIntentService;
 
+import androidx.core.app.JobIntentService;
 import javinator9889.localemanager.application.BaseApplication;
 
 /**

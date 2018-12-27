@@ -19,8 +19,8 @@
 package javinator9889.localemanager.fragment;
 
 import android.content.Context;
-import androidx.fragment.app.Fragment;
 
+import androidx.fragment.app.Fragment;
 import javinator9889.localemanager.application.BaseApplication;
 
 /**

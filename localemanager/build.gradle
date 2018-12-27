@@ -5,7 +5,7 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 20
+        versionCode 21
         versionName "1.0X"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -68,13 +68,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'androidx.annotation:annotation:1.0.1'
 }
-
-/*jar {
-    manifest {
-        attributes('Implementation-Title': project.name,
-                'Implementation-Version': project.version)
-    }
-}*/
 
 apply from: 'https://raw.githubusercontent.com/brightec/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/brightec/JCenter/master/bintrayv1.gradle'
